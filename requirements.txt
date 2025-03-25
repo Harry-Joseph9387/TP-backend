@@ -1,0 +1,6 @@
+Flask
+flask-cors
+geopy
+numpy
+scipy
+gunicorn
