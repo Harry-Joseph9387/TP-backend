@@ -4,3 +4,4 @@ geopy
 numpy
 scipy
 gunicorn
+httpx
