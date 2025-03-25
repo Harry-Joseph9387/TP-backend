@@ -134,6 +134,9 @@ def shortest_path():
     
     result = asyncio.run(main(places))
     return jsonify(result)
-
+@app.route("/")
+def home():
+    return "Welcome to the Travel Planner Backend!"
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))  # Use Render’s expected port
+    app.run(host="0.0.0.0", port=port)
