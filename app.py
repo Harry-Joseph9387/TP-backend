@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import itertools
-
+import os
 app = Flask(__name__)
 CORS(app)  # Allows frontend to make API requests
 
